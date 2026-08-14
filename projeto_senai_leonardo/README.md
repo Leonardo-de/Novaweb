@@ -1,3 +1,9 @@
+## Requisitos do Sistema
+
+- Git instalado
+- Editor de código (VS Code)
+- Sistema operacional Windows
+
 # E-Commerce Online (Foka Mais)
 
 ## Descrição do Projeto
@@ -34,3 +40,36 @@ Este projeto consiste no desenvolvimento de um sistema de e-commerce (loja virtu
 - Visual Studio Code (VS Code)
 - Markdown
 - Trello (Kanban)
+
+## Regra 60-30-10
+
+- Proporcao / cor
+60% - Branco - #FFFFFF - Fundo, espacos
+30% - Preto - #000000 - Texto
+10% - Verde-agua - #6fceae - Botoes, limks promocoes
+
+## Estrutura de Arquivos
+
+Novaweb
+├── meu-projeto (Foka Mais)
+│   ├── Assets
+│   │   ├── Css
+│   │   │   └── style.css
+│   │   └── Images
+│   │       ├── Wireframes
+│   │       │   └── Wireframe.png
+│   │       ├── img 1.jpg
+│   │       ├── img 2.jpg
+│   │       ├── img3.jpg
+│   │       └── Logo.png
+│   ├── Pages
+│   │   ├── contato.html
+│   │   └── Produtos.html
+│   └── Index.html
+├── projeto_senai_leonardo
+│   └── README.md
+└── NOTAS_ESTUDOS.md
+
+## Status do projeto
+
+O projeto está na fase de planejamento e preparação da estrutura, definindo a organização inicial e os próximos passos para o desenvolvimento.
