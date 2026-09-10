@@ -1,0 +1,29 @@
+/*
+Descricao: Exercícios da Aula 04 - Introdução ao CSS e Seletores
+nome_arquivo: index.html
+nome_exercicio: Atividade 04 - Introdução ao CSS e Seletores
+nome_aluno: Leonardo de OLiveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+*/
+
+
+/* Seletor de classe */
+.titulo {
+    color: blue;
+}
+
+/* Seletor de ID */
+#descricao {
+    font-size: 24px;
+}
+
+/* Classe dos parágrafos */
+.paragrafo-simples {
+    color: green;
+}
+
+/* Seletor descendente */
+nav a {
+    color: red;
+}
