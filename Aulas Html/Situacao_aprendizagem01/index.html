@@ -1,752 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Foka Mais - Informática e eletrônicos para todos.">
-
+    <meta name="description" content="Foka Mais - informática e eletrônicos.">
     <title>Foka Mais | Informática e Eletrônicos</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- ==============================
-         CABEÇALHO
-    =============================== -->
-
     <header class="cabecalho">
-
-        <div class="topo">
-
-            <div class="container topo-conteudo">
-
-                <!-- LOGO -->
-                <a href="index.html" class="logo">
-                    <img src="img/logo.png" alt="Foka Mais - Informática e Eletrônicos">
-                </a>
-
-                <!-- PESQUISA -->
-                <form class="pesquisa">
-
-                    <label for="campo-pesquisa" class="sr-only">
-                        Pesquisar produtos
-                    </label>
-
-                    <input
-                        type="search"
-                        id="campo-pesquisa"
-                        placeholder="Buscar produtos, marcas e muito mais..."
-                    >
-
-                    <button type="submit" aria-label="Pesquisar">
-                        🔍
-                    </button>
-
-                </form>
-
-                <!-- AÇÕES -->
-                <div class="acoes">
-
-                    <a href="contato.html" class="acao">
-                        <span class="icone">👤</span>
-                        <span>Entrar</span>
-                    </a>
-
-                    <a href="contato.html" class="acao">
-                        <span class="icone">🛒</span>
-                        <span>Carrinho</span>
-                    </a>
-
-                </div>
-
+        <div class="navegacao">
+            <a class="logo" href="index.html" aria-label="Foka Mais - início"><img src="Logo.png" alt="Foka Mais"></a>
+            <nav class="menu-principal" aria-label="Menu principal">
+                <a href="produtos.html">Informática</a>
+                <a href="produtos.html">Celulares</a>
+                <a href="produtos.html">Games</a>
+                <a href="produtos.html">Acessórios</a>
+                <a href="produtos.html">Ofertas</a>
+            </nav>
+            <div class="acoes">
+                <a href="produtos.html" class="pesquisa" aria-label="Pesquisar produtos">Buscar produtos</a>
+                <a href="produtos.html" class="icone" aria-label="Favoritos">♡</a>
+                <a href="produtos.html" class="icone" aria-label="Sacola de compras">▢</a>
             </div>
-
         </div>
-
-
-        <!-- ==============================
-             MENU
-        =============================== -->
-
-        <nav class="menu">
-
-            <div class="container">
-
-                <ul>
-
-                    <li>
-                        <a href="index.html" class="ativo">
-                            Início
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="produtos.html">
-                            Produtos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="produtos.html">
-                            Ofertas
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="produtos.html">
-                            Informática
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="produtos.html">
-                            Eletrônicos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </nav>
-
+        <div class="faixa-marca" aria-hidden="true"></div>
     </header>
 
-
-    <!-- ==============================
-         CONTEÚDO PRINCIPAL
-    =============================== -->
-
     <main>
-
-
-        <!-- ==============================
-             BANNER PRINCIPAL
-        =============================== -->
-
-        <section class="banner">
-
-            <div class="container">
-
-                <div class="banner-box">
-
-                    <!-- BANNER PROMOCIONAL -->
-                    <a href="produtos.html" class="banner-link">
-
-                        <img
-                            src="img/banner-apple.png"
-                            alt="Promoção Foka Mais - Compre 2 produtos Apple e ganhe 20% de desconto"
-                            class="banner-promocional"
-                        >
-
-                    </a>
-
-                    <!-- INDICADORES -->
-                    <div class="indicadores">
-
-                        <span class="indicador ativo"></span>
-                        <span class="indicador"></span>
-                        <span class="indicador"></span>
-
-                    </div>
-
+        <section class="hero hero-perifericos">
+            <div class="conteudo-hero claro">
+                <p class="sobretitulo">SEMANA DOS PERIFÉRICOS</p>
+                <h1>Seu setup<br>merece mais.</h1>
+                <p>Teclados, mouses e headsets com ofertas especiais.</p>
+                <div class="botoes">
+                    <a href="produtos.html" class="botao">Ver periféricos</a>
+                    <a href="produtos.html" class="botao">Comprar agora</a>
                 </div>
-
             </div>
-
         </section>
 
+        <section class="introducao">
+            <p class="sobretitulo">TECNOLOGIA PARA VOCÊ</p>
+            <h2>Mais potência<br>para o seu dia.</h2>
+            <p>Informática e eletrônicos para trabalhar, estudar e se divertir.</p>
+            <a href="produtos.html" class="botao">Ver produtos</a>
+        </section>
 
-        <!-- ==============================
-             CATEGORIAS
-        =============================== -->
+        <section class="hero hero-gamer">
+            <div class="conteudo-hero claro">
+                <p class="sobretitulo">OFERTAS GAMER</p>
+                <h2>Jogue no<br>seu máximo.</h2>
+                <p>Monte seu setup com performance e imersão.</p>
+                <a href="produtos.html" class="botao">Explorar ofertas</a>
+            </div>
+        </section>
 
         <section class="categorias">
-
-            <div class="container">
-
-                <div class="titulo-secao">
-
-                    <h2>
-                        Encontre por categoria
-                    </h2>
-
-                    <a href="produtos.html">
-                        Ver todas →
-                    </a>
-
-                </div>
-
-
-                <div class="categorias-grid">
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            💻
-                        </div>
-
-                        <h3>
-                            Computadores
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            🖥️
-                        </div>
-
-                        <h3>
-                            Monitores
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            ⌨️
-                        </div>
-
-                        <h3>
-                            Periféricos
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            🧩
-                        </div>
-
-                        <h3>
-                            Componentes
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            🎧
-                        </div>
-
-                        <h3>
-                            Áudio
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            📱
-                        </div>
-
-                        <h3>
-                            Celulares
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            🎮
-                        </div>
-
-                        <h3>
-                            Games
-                        </h3>
-
-                    </a>
-
-
-                    <a href="produtos.html" class="categoria">
-
-                        <div class="categoria-icone">
-                            🔌
-                        </div>
-
-                        <h3>
-                            Cabos e acessórios
-                        </h3>
-
-                    </a>
-
-
-                </div>
-
+            <div class="titulo-secao">
+                <h2>Compre por categoria</h2>
+                <a href="produtos.html">Ver tudo</a>
             </div>
-
+            <div class="grade-categorias">
+                <a href="produtos.html" class="categoria"><img src="imagens/perifericos.jpg" alt="Teclado para computador"><span>Teclados</span></a>
+                <a href="produtos.html" class="categoria"><img src="imagens/mouses.jpg" alt="Mouse para computador"><span>Mouses</span></a>
+                <a href="produtos.html" class="categoria"><img src="imagens/headsets.jpg" alt="Headset"><span>Headsets</span></a>
+                <a href="produtos.html" class="categoria"><img src="imagens/celulares.jpg" alt="Celular"><span>Celulares</span></a>
+                <a href="produtos.html" class="categoria"><img src="imagens/notebooks.jpg" alt="Notebook"><span>Notebooks</span></a>
+            </div>
         </section>
 
-
-        <!-- ==============================
-             OFERTAS
-        =============================== -->
-
-        <section class="ofertas">
-
-            <div class="container">
-
-                <div class="titulo-secao">
-
-                    <h2>
-                        Ofertas em destaque
-                    </h2>
-
-                    <a href="produtos.html">
-                        Ver mais →
-                    </a>
-
-                </div>
-
-
-                <div class="produtos-grid">
-
-
-                    <!-- PRODUTO 1 -->
-
-                    <article class="produto">
-
-                        <div class="produto-imagem">
-
-                            <span class="etiqueta">
-                                OFERTA
-                            </span>
-
-                            <img
-                                src="img/notebook.jpg"
-                                alt="Notebook Foka Mais"
-                            >
-
-                        </div>
-
-
-                        <div class="produto-conteudo">
-
-                            <h3>
-                                Notebook Foka Mais 15.6"
-                            </h3>
-
-                            <p class="preco-antigo">
-                                R$ 3.499,90
-                            </p>
-
-                            <p class="preco">
-                                R$ 2.799,90
-                            </p>
-
-                            <p class="parcelamento">
-                                Em até 10x sem juros
-                            </p>
-
-                            <a href="produtos.html" class="botao-produto">
-                                Tenho interesse
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 2 -->
-
-                    <article class="produto">
-
-                        <div class="produto-imagem">
-
-                            <span class="etiqueta">
-                                OFERTA
-                            </span>
-
-                            <img
-                                src="img/mouse.jpg"
-                                alt="Mouse sem fio ergonômico"
-                            >
-
-                        </div>
-
-
-                        <div class="produto-conteudo">
-
-                            <h3>
-                                Mouse sem fio ergonômico
-                            </h3>
-
-                            <p class="preco-antigo">
-                                R$ 149,90
-                            </p>
-
-                            <p class="preco">
-                                R$ 89,90
-                            </p>
-
-                            <p class="parcelamento">
-                                Em até 3x sem juros
-                            </p>
-
-                            <a href="produtos.html" class="botao-produto">
-                                Tenho interesse
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 3 -->
-
-                    <article class="produto">
-
-                        <div class="produto-imagem">
-
-                            <span class="etiqueta">
-                                OFERTA
-                            </span>
-
-                            <img
-                                src="img/teclado.jpg"
-                                alt="Teclado mecânico RGB"
-                            >
-
-                        </div>
-
-
-                        <div class="produto-conteudo">
-
-                            <h3>
-                                Teclado mecânico RGB
-                            </h3>
-
-                            <p class="preco-antigo">
-                                R$ 299,90
-                            </p>
-
-                            <p class="preco">
-                                R$ 219,90
-                            </p>
-
-                            <p class="parcelamento">
-                                Em até 5x sem juros
-                            </p>
-
-                            <a href="produtos.html" class="botao-produto">
-                                Tenho interesse
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 4 -->
-
-                    <article class="produto">
-
-                        <div class="produto-imagem">
-
-                            <span class="etiqueta">
-                                OFERTA
-                            </span>
-
-                            <img
-                                src="img/headset.jpg"
-                                alt="Headset Gamer Foka Sound"
-                            >
-
-                        </div>
-
-
-                        <div class="produto-conteudo">
-
-                            <h3>
-                                Headset Gamer Foka Sound
-                            </h3>
-
-                            <p class="preco-antigo">
-                                R$ 249,90
-                            </p>
-
-                            <p class="preco">
-                                R$ 179,90
-                            </p>
-
-                            <p class="parcelamento">
-                                Em até 4x sem juros
-                            </p>
-
-                            <a href="produtos.html" class="botao-produto">
-                                Tenho interesse
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
+        <section class="hero hero-notebooks">
+            <div class="conteudo-hero claro">
+                <p class="sobretitulo">NOTEBOOKS EM OFERTA</p>
+                <h2>Trabalho,<br>estudo e lazer.</h2>
+                <p>Escolha o notebook ideal para o seu ritmo.</p>
+                <a href="produtos.html" class="botao">Comprar notebooks</a>
             </div>
-
         </section>
-
-
-        <!-- ==============================
-             BENEFÍCIOS
-        =============================== -->
-
-        <section class="beneficios">
-
-            <div class="container">
-
-                <div class="beneficios-box">
-
-
-                    <div class="beneficio">
-
-                        <div class="beneficio-icone">
-                            🚚
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Entrega rápida
-                            </h3>
-
-                            <p>
-                                Receba seus produtos
-                                com segurança.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="linha"></div>
-
-
-                    <div class="beneficio">
-
-                        <div class="beneficio-icone">
-                            🔒
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Compra segura
-                            </h3>
-
-                            <p>
-                                Seus dados protegidos
-                                durante a compra.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="linha"></div>
-
-
-                    <div class="beneficio">
-
-                        <div class="beneficio-icone">
-                            💳
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Pagamento facilitado
-                            </h3>
-
-                            <p>
-                                Diversas opções
-                                de pagamento.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
     </main>
 
-
-    <!-- ==============================
-         RODAPÉ
-    =============================== -->
-
-    <footer class="rodape">
-
-        <div class="container rodape-grid">
-
-
-            <div class="rodape-marca">
-
-                <img
-                    src="img/logo.png"
-                    alt="Foka Mais"
-                >
-
-                <p>
-                    Informática e eletrônicos
-                    para todos.
-                </p>
-
-                <div class="redes">
-
-                    <a href="#" aria-label="Instagram">
-                        Instagram
-                    </a>
-
-                    <a href="#" aria-label="Facebook">
-                        Facebook
-                    </a>
-
-                    <a href="#" aria-label="YouTube">
-                        YouTube
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div>
-
-                <h3>
-                    Institucional
-                </h3>
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">
-                            Início
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="produtos.html">
-                            Produtos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <div>
-
-                <h3>
-                    Atendimento
-                </h3>
-
-                <ul>
-
-                    <li>
-                        Segunda a sexta
-                    </li>
-
-                    <li>
-                        08:00 às 18:00
-                    </li>
-
-                    <li>
-                        contato@fokamais.com
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <div>
-
-                <h3>
-                    Redes sociais
-                </h3>
-
-                <ul>
-
-                    <li>
-                        <a href="#">
-                            Instagram
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Facebook
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            YouTube
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-        </div>
-
-
-        <div class="copyright">
-
-            <p>
-                © 2026 Foka Mais. Todos os direitos reservados.
-            </p>
-
-        </div>
-
+    <footer>
+        <a class="logo logo-rodape" href="index.html" aria-label="Foka Mais - início"><img src="Logo.png" alt="Foka Mais"></a>
+        <span>© 2026 Foka Mais. Todos os direitos reservados.</span>
+        <a href="contato.html">Fale conosco</a>
     </footer>
-
-
 </body>
-
 </html>
