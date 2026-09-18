@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Central de ajuda Foka Mais.">
+    <title>Ajuda | Foka Mais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="navegacao">
+            <a class="logo" href="index.html" aria-label="Foka Mais - início"><img src="Logo.png" alt="Foka Mais"></a>
+            <nav class="menu-principal" aria-label="Menu principal">
+                <a href="produtos.html">Informática</a>
+                <a href="produtos.html">Celulares</a>
+                <a href="produtos.html">Games</a>
+                <a href="produtos.html">Acessórios</a>
+                <a href="produtos.html">Ofertas</a>
+            </nav>
+            <div class="acoes">
+                <a href="produtos.html" class="pesquisa">Buscar produtos</a>
+                <a href="produtos.html" class="icone" aria-label="Favoritos">♡</a>
+                <a href="produtos.html" class="icone" aria-label="Carrinho">▢</a>
+            </div>
+        </div>
+        <div class="faixa-marca" aria-hidden="true"></div>
+    </header>
+
+    <main class="pagina-ajuda">
+        <section class="hero-ajuda">
+            <p class="sobretitulo">CENTRAL DE AJUDA</p>
+            <h1>Como podemos ajudar?</h1>
+            <form class="busca-ajuda" action="#duvidas">
+                <label for="buscar">Busque uma dúvida</label>
+                <input id="buscar" type="search" placeholder="Ex.: rastrear pedido" autocomplete="off">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="secao-ajuda" id="duvidas">
+            <div class="cabecalho-secao">
+                <div>
+                    <p class="sobretitulo">ASSISTÊNCIA RÁPIDA</p>
+                    <h2>Encontre respostas</h2>
+                </div>
+                <p>Selecione um tema para ver as dúvidas mais comuns.</p>
+            </div>
+
+            <div class="grade-ajuda">
+                <a href="#pedido" class="item-ajuda"><strong>Pedidos</strong><span>Acompanhe, altere ou cancele sua compra.</span><b>›</b></a>
+                <a href="#entrega" class="item-ajuda"><strong>Entrega</strong><span>Prazo, rastreio e informações de envio.</span><b>›</b></a>
+                <a href="#pagamento" class="item-ajuda"><strong>Pagamentos</strong><span>Pix, cartão, boleto e aprovação.</span><b>›</b></a>
+                <a href="#produto" class="item-ajuda"><strong>Produtos</strong><span>Dúvidas sobre garantia e especificações.</span><b>›</b></a>
+                <a href="#trocas" class="item-ajuda"><strong>Trocas e devoluções</strong><span>Solicite uma troca ou devolução.</span><b>›</b></a>
+                <a href="#contato" class="item-ajuda"><strong>Minha conta</strong><span>Cadastro, senha e dados pessoais.</span><b>›</b></a>
+            </div>
+        </section>
+
+        <section class="secao-ajuda perguntas" id="pedido">
+            <p class="sobretitulo">PERGUNTAS FREQUENTES</p>
+            <h2>Talvez sua resposta esteja aqui</h2>
+            <details><summary>Como acompanho meu pedido?</summary><p>Acesse a área de pedidos com seu e-mail de compra. Você encontrará o status e o código de rastreio quando o envio for feito.</p></details>
+            <details id="entrega"><summary>Qual é o prazo de entrega?</summary><p>O prazo aparece antes da finalização da compra e pode variar conforme seu CEP e o produto escolhido.</p></details>
+            <details id="pagamento"><summary>Meu pagamento ainda está em análise. O que faço?</summary><p>Alguns pagamentos podem levar alguns minutos para serem aprovados. Caso demore mais de 24 horas, fale com nosso atendimento.</p></details>
+            <details id="produto"><summary>Os produtos possuem garantia?</summary><p>Sim. Todos os produtos possuem garantia conforme as condições informadas pelo fabricante.</p></details>
+            <details id="trocas"><summary>Como solicito uma troca ou devolução?</summary><p>Entre em contato com a gente e informe o número do pedido. Nossa equipe orientará os próximos passos.</p></details>
+        </section>
+
+        <section class="fale-conosco" id="contato">
+            <div>
+                <p class="sobretitulo">AINDA PRECISA DE AJUDA?</p>
+                <h2>Fale com a Foka Mais</h2>
+                <p>Nossa equipe está disponível de segunda a sábado, das 8h às 20h.</p>
+            </div>
+            <div class="canais-contato">
+                <a href="mailto:atendimento@fokamais.com.br"><strong>E-mail</strong><span>atendimento@fokamais.com.br</span></a>
+                <a href="tel:+5511999999999"><strong>Telefone</strong><span>(11) 99999-9999</span></a>
+                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener"><strong>WhatsApp</strong><span>Fale pelo WhatsApp</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo logo-rodape" href="index.html" aria-label="Foka Mais - início"><img src="Logo.png" alt="Foka Mais"></a>
+        <span>© 2026 Foka Mais. Todos os direitos reservados.</span>
+        <a href="index.html">Voltar ao início</a>
+    </footer>
+</body>
+</html>
