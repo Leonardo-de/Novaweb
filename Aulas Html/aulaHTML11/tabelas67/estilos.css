@@ -1,0 +1,147 @@
+﻿header {
+    background-color: palevioletred;
+    padding: 5px;
+    color: white;
+}
+
+header nav {
+    background-color: aliceblue;
+}
+
+header nav ul {
+    list-style: none;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+header nav ul li {
+    display: block;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 7px 12px;
+    color: #333;
+    background-color: white;
+    border: 1px solid palevioletred;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: palevioletred;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+.pagina-simples main {
+    padding: 5px;
+}
+
+.pagina-copa main {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.pagina-simples main table {
+    width: 400px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.pagina-simples main table td,
+.pagina-simples main table th {
+    border: 1px solid;
+}
+
+.pagina-copa main table {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 760px;
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+
+.pagina-copa main table td,
+.pagina-copa main table th {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.pagina-copa main table td:nth-child(2) {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.pagina-copa main table td img {
+    display: inline-block;
+    width: 42px;
+    height: 26px;
+    margin-right: 6px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: rgb(78, 78, 78);
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+}
+
+.posicao {
+    color: #8a8a8a;
+}
+
+.posicao.classificado {
+    color: #075fe4;
+    font-weight: bold;
+}
+
+.ultimos-jogos {
+    white-space: nowrap;
+}
+
+.resultado {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+
+.resultado.vitoria {
+    background-color: #2f9e44;
+}
+
+.resultado.empate {
+    background-color: #bfc5ca;
+}
+
+.resultado.derrota {
+    background-color: #e03131;
+}
+
+.legenda-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.legenda-jogos span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}

@@ -1,0 +1,860 @@
+﻿<!--
+Descricao: Exercícios da Aula 11 - Fundamentos do HTML
+nome_arquivo: tabela_copa2026.html
+nome_exercicio: Atividade 11 - Introdução básica ao HTML e CSS
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+-->
+
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Copa 2026</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="pagina-copa">
+    <header>
+        <h1>Tabela Copa 2026</h1>
+        <nav>
+            <ul>
+                <li><a href="tabela_simples.html">Simples</a></li>
+                <li><a href="tabela_copa2026.html">Copa 2026</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Classificação final da fase de grupos</h2>
+        <p>Os dois primeiros de cada grupo avançam direto. Os oito melhores terceiros também se classificam.</p>
+        <p class="legenda-jogos"><span><i class="resultado vitoria"></i> Vitória</span><span><i class="resultado empate"></i> Empate</span><span><i class="resultado derrota"></i> Derrota</span><span><b class="posicao classificado">1º</b> Classificado</span></p>
+        <table>
+            <tr>
+                <th colspan="11">Grupo A</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/mexico.png" width="50" alt="Bandeira de México"> México</td>
+                <td>9</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>6</td>
+                <td>0</td>
+                <td>+6</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Vitória"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/africa_sul.png" width="50" alt="Bandeira de África do Sul"> África do Sul</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>-1</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Empate, Vitória"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">3º</td>
+                <td><img src="foto bandieras/coreia_sul.png" width="50" alt="Bandeira de Coreia do Sul"> Coreia do Sul</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>-1</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Derrota, Derrota"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/republica_tcheca.png" width="50" alt="Bandeira de República Tcheca"> República Tcheca</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>6</td>
+                <td>-4</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Empate, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo B</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/suica.png" width="50" alt="Bandeira de Suíça"> Suíça</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>7</td>
+                <td>3</td>
+                <td>+4</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/canada.png" width="50" alt="Bandeira de Canadá"> Canadá</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>8</td>
+                <td>3</td>
+                <td>+5</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Derrota"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/bosnia.png" width="50" alt="Bandeira de Bósnia"> Bósnia</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-1</td>
+                <td class="ultimos-jogos" aria-label="Empate, Derrota, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/catar.png" width="50" alt="Bandeira de Catar"> Catar</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>10</td>
+                <td>-8</td>
+                <td class="ultimos-jogos" aria-label="Empate, Derrota, Derrota"><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo C</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/brasil.png" width="50" alt="Bandeira de Brasil"> Brasil</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>7</td>
+                <td>1</td>
+                <td>+6</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/marrocos.png" width="50" alt="Bandeira de Marrocos"> Marrocos</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>6</td>
+                <td>3</td>
+                <td>+3</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">3º</td>
+                <td><img src="foto bandieras/escocia.png" width="50" alt="Bandeira de Escócia"> Escócia</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>-3</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Derrota, Derrota"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/haiti.png" width="50" alt="Bandeira de Haiti"> Haiti</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>8</td>
+                <td>-6</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo D</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/estados_unidos.png" width="50" alt="Bandeira de Estados Unidos"> Estados Unidos</td>
+                <td>6</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>8</td>
+                <td>4</td>
+                <td>+4</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Derrota"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/australia.png" width="50" alt="Bandeira de Austrália"> Austrália</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Derrota, Empate"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/paraguai.png" width="50" alt="Bandeira de Paraguai"> Paraguai</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>-2</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Vitória, Empate"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/turquia.png" width="50" alt="Bandeira de Turquia"> Turquia</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+                <td>5</td>
+                <td>-2</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Vitória"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo E</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/alemanha.png" width="50" alt="Bandeira de Alemanha"> Alemanha</td>
+                <td>6</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>10</td>
+                <td>4</td>
+                <td>+6</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Derrota"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/costa_marfim.png" width="50" alt="Bandeira de Costa do Marfim"> Costa do Marfim</td>
+                <td>6</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>4</td>
+                <td>2</td>
+                <td>+2</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Derrota, Vitória"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/equador.png" width="50" alt="Bandeira de Equador"> Equador</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Empate, Vitória"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/curacao.png" width="50" alt="Bandeira de Curaçao"> Curaçao</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>9</td>
+                <td>-8</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Empate, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo F</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/holanda.png" width="50" alt="Bandeira de Holanda"> Holanda</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>10</td>
+                <td>4</td>
+                <td>+6</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/japao.png" width="50" alt="Bandeira de Japão"> Japão</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>7</td>
+                <td>3</td>
+                <td>+4</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Empate"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/suecia.png" width="50" alt="Bandeira de Suécia"> Suécia</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Derrota, Empate"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/tunisia.png" width="50" alt="Bandeira de Tunísia"> Tunísia</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>12</td>
+                <td>-10</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo G</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/belgica.png" width="50" alt="Bandeira de Bélgica"> Bélgica</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>6</td>
+                <td>2</td>
+                <td>+4</td>
+                <td class="ultimos-jogos" aria-label="Empate, Empate, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/egito.png" width="50" alt="Bandeira de Egito"> Egito</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+                <td>3</td>
+                <td>+2</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Empate"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">3º</td>
+                <td><img src="foto bandieras/ira.png" width="50" alt="Bandeira de Irã"> Irã</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Empate, Empate, Empate"><span class="resultado empate" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/nova_zelandia.png" width="50" alt="Bandeira de Nova Zelândia"> Nova Zelândia</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>10</td>
+                <td>-6</td>
+                <td class="ultimos-jogos" aria-label="Empate, Derrota, Derrota"><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo H</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/espanha.png" width="50" alt="Bandeira de Espanha"> Espanha</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>5</td>
+                <td>0</td>
+                <td>+5</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/cabo_verde.png" width="50" alt="Bandeira de Cabo Verde"> Cabo Verde</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Empate, Empate, Empate"><span class="resultado empate" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">3º</td>
+                <td><img src="foto bandieras/uruguai.png" width="50" alt="Bandeira de Uruguai"> Uruguai</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>4</td>
+                <td>-1</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Derrota"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/arabia_saudita.png" width="50" alt="Bandeira de Arábia Saudita"> Arábia Saudita</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+                <td>-4</td>
+                <td class="ultimos-jogos" aria-label="Empate, Derrota, Empate"><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo I</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/franca.png" width="50" alt="Bandeira de França"> França</td>
+                <td>9</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>10</td>
+                <td>2</td>
+                <td>+8</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Vitória"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/noruega.png" width="50" alt="Bandeira de Noruega"> Noruega</td>
+                <td>6</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>8</td>
+                <td>7</td>
+                <td>+1</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Derrota"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/senegal.png" width="50" alt="Bandeira de Senegal"> Senegal</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>8</td>
+                <td>6</td>
+                <td>+2</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Vitória"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/iraque.png" width="50" alt="Bandeira de Iraque"> Iraque</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>1</td>
+                <td>12</td>
+                <td>-11</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo J</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/argentina.png" width="50" alt="Bandeira de Argentina"> Argentina</td>
+                <td>9</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>1</td>
+                <td>+7</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Vitória"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/austria.png" width="50" alt="Bandeira de Áustria"> Áustria</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Derrota, Empate"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/argelia.png" width="50" alt="Bandeira de Argélia"> Argélia</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+                <td>7</td>
+                <td>-2</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Empate"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/jordania.png" width="50" alt="Bandeira de Jordânia"> Jordânia</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+                <td>8</td>
+                <td>-5</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo K</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/colombia.png" width="50" alt="Bandeira de Colômbia"> Colômbia</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>+3</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Vitória, Empate"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/portugal.png" width="50" alt="Bandeira de Portugal"> Portugal</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>6</td>
+                <td>1</td>
+                <td>+5</td>
+                <td class="ultimos-jogos" aria-label="Empate, Vitória, Empate"><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/rd_congo.png" width="50" alt="Bandeira de RD Congo"> RD Congo</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+                <td>3</td>
+                <td>+1</td>
+                <td class="ultimos-jogos" aria-label="Empate, Derrota, Vitória"><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/uzbequistao.png" width="50" alt="Bandeira de Uzbequistão"> Uzbequistão</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>11</td>
+                <td>-9</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <th colspan="11">Grupo L</th>
+            </tr>
+            <tr>
+                <th>Pos.</th>
+                <th>Seleção</th>
+                <th>Pts</th>
+                <th>PJ</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Últ. jogos</th>
+            </tr>
+            <tr>
+                <td class="posicao classificado">1º</td>
+                <td><img src="foto bandieras/inglaterra.png" width="50" alt="Bandeira de Inglaterra"> Inglaterra</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>6</td>
+                <td>2</td>
+                <td>+4</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Empate, Vitória"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">2º</td>
+                <td><img src="foto bandieras/croacia.png" width="50" alt="Bandeira de Croácia"> Croácia</td>
+                <td>6</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>5</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Vitória, Vitória"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado vitoria" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao classificado">3º</td>
+                <td><img src="foto bandieras/gana.png" width="50" alt="Bandeira de Gana"> Gana</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="ultimos-jogos" aria-label="Vitória, Empate, Derrota"><span class="resultado vitoria" aria-hidden="true"></span><span class="resultado empate" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+                <td class="posicao">4º</td>
+                <td><img src="foto bandieras/panama.png" width="50" alt="Bandeira de Panamá"> Panamá</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>4</td>
+                <td>-4</td>
+                <td class="ultimos-jogos" aria-label="Derrota, Derrota, Derrota"><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span><span class="resultado derrota" aria-hidden="true"></span></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tabela. Todos os direitos reservados.</p>
+        <p>By Leonardo Oliveira</p>
+    </footer>
+</body>
+</html>
+
+
+
+
