@@ -1,4 +1,14 @@
-﻿* {
+﻿:root {
+    --preto: #111111;
+    --branco: #ffffff;
+    --menta: #70d2b7;
+    --menta-escuro: #4fa98f;
+    --cinza-claro: #f0f5f4;
+    --cinza: #5f6c76;
+    --borda: #d8dfde;
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -8,47 +18,61 @@ body {
     padding: 24px;
     display: grid;
     place-items: center;
-    color: #f4f4f5;
-    background: #080808;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--preto);
+    background: var(--cinza-claro);
+    font-family: "Inter", Arial, sans-serif;
 }
 
 .login-card {
-    width: min(100%, 390px);
+    width: min(100%, 420px);
     padding: 36px;
-    background: #111;
-    border: 1px solid #242424;
-    border-radius: 12px;
+    background: var(--branco);
+    border-top: 5px solid var(--menta);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .subtitulo {
-    margin: 28px 0 8px;
-    color: #a1a1aa;
+    margin: 34px 0 8px;
+    color: var(--cinza);
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.2px;
 }
 
 h1 {
     margin: 0;
     font-size: 26px;
+    letter-spacing: -.6px;
 }
 
 .descricao {
     margin: 10px 0 28px;
-    color: #a1a1aa;
+    color: var(--cinza);
+    font-size: 14px;
     line-height: 1.5;
 }
 
 .campo {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #e4e4e7;
-    font-size: 14px;
+    color: var(--preto);
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -62,80 +86,92 @@ label {
     margin-bottom: 8px;
 }
 
-a {
-    color: #d4d4d8;
-    font-size: 13px;
+a.link-secundario,
+.cadastro a {
+    color: var(--menta-escuro);
+    font-size: 12px;
+    font-weight: 600;
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
     text-decoration: underline;
 }
 
 input {
     width: 100%;
     padding: 13px 14px;
-    border: 1px solid #303030;
-    border-radius: 7px;
+    border: 1px solid var(--borda);
+    border-radius: 3px;
     outline: none;
-    color: #f4f4f5;
-    background: #0b0b0b;
+    color: var(--preto);
+    background: var(--branco);
     font: inherit;
+    font-size: 14px;
 }
 
 input::placeholder {
-    color: #71717a;
+    color: #929c9a;
 }
 
 input:focus {
-    border-color: #a1a1aa;
+    border-color: var(--menta-escuro);
+    box-shadow: 0 0 0 3px rgba(112, 210, 183, .18);
 }
 
 input.invalido {
-    border-color: #e5484d;
+    border-color: #d64545;
 }
 
 .erro {
     display: block;
     min-height: 16px;
     margin-top: 5px;
-    color: #ff6b72;
+    color: #c53333;
     font-size: 12px;
 }
 
 button {
     width: 100%;
-    padding: 13px;
-    border: 0;
-    border-radius: 7px;
-    color: #090909;
-    background: #f4f4f5;
-    font-size: 15px;
+    padding: 14px;
+    border: 1px solid var(--menta);
+    border-radius: 3px;
+    color: var(--preto);
+    background: var(--menta);
+    font: inherit;
+    font-size: 14px;
     font-weight: 700;
     cursor: pointer;
 }
 
 button:hover {
-    background: #d4d4d8;
+    border-color: var(--menta-escuro);
+    color: var(--branco);
+    background: var(--menta-escuro);
 }
 
 .mensagem {
     min-height: 18px;
     margin: 14px 0 0;
-    color: #86efac;
+    color: var(--menta-escuro);
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .cadastro {
-    margin: 22px 0 0;
-    color: #a1a1aa;
+    margin: 20px 0 0;
+    padding-top: 19px;
+    border-top: 1px solid var(--borda);
+    color: var(--cinza);
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
     .login-card {
         padding: 28px 22px;
     }
