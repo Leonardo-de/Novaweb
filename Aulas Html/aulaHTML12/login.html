@@ -1,0 +1,75 @@
+﻿<!--
+Descricao: Atividade da Aula 12 - Introdução aos Formulários Web
+nome_arquivo: login.html
+nome_exercicio: Tela de login com validação
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Novaweb</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <main class="login-card">
+        <header class="cabecalho-login">
+
+            <p class="subtitulo">BEM-VINDO DE VOLTA</p>
+            <h1>Entre na sua conta</h1>
+            <p class="descricao">Acesse para continuar de onde parou.</p>
+        </header>
+
+        <form id="form-login" action="#" method="post" novalidate>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="voce@exemplo.com"
+                    autocomplete="email"
+                    required
+                >
+                <small class="erro" id="erro-email"></small>
+            </div>
+
+            <div class="campo">
+                <div class="rotulo-senha">
+                    <label for="senha">Senha</label>
+                    <a href="#" class="link-secundario">Esqueceu a senha?</a>
+                </div>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    autocomplete="current-password"
+                    minlength="6"
+                    required
+                >
+                <small class="erro" id="erro-senha"></small>
+            </div>
+
+            <button type="submit">Entrar</button>
+            <p class="mensagem" id="mensagem" role="status" aria-live="polite"></p>
+        </form>
+
+        <footer class="rodape-login">
+            <p class="cadastro">
+                Ainda não tem uma conta? <a href="#">Cadastre-se</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
