@@ -1,0 +1,184 @@
+﻿/*
+Descricao: Aula 14 - CSS para Formulários
+nome_arquivo: estilos.css
+nome_exercicio: Aula 14 - CSS para Formulários
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 32px 16px;
+    background: #080a0b;
+    color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: min(100%, 680px);
+    margin: 0 auto;
+}
+
+.cabecalho {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 8px 0;
+    color: #f8f9fa;
+}
+
+.cabecalho p {
+    line-height: 1.5;
+}
+
+.aula {
+    color: #8ab4f8;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.formulario {
+    display: grid;
+    gap: 20px;
+    padding: 28px;
+    border: 1px solid #343a40;
+    border-radius: 8px;
+    background: #080a0b;
+    box-shadow: none;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #f8f9fa;
+    font-weight: 700;
+}
+
+.linha-campo {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+input.form-control {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    background: #080a0b;
+    color: #f8f9fa;
+    font: inherit;
+    transition: border-color 160ms, box-shadow 160ms, background 160ms;
+}
+
+input::placeholder {
+    color: #8b949e;
+    opacity: 1;
+}
+
+input:focus {
+    border-color: #8ab4f8;
+    outline: 3px solid rgb(138 180 248 / 20%);
+    background: #111416;
+    color: #fff;
+}
+
+input:disabled {
+    border-color: #343a40;
+    background: #111416;
+    color: #adb5bd;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+input:required:valid:not(:placeholder-shown) {
+    border-color: #198754;
+}
+
+input:required:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.campo small {
+    display: block;
+    margin-top: 6px;
+    color: #adb5bd;
+}
+
+button {
+    border: 1px solid #6c757d;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 3px solid #8ab4f8;
+    outline-offset: 2px;
+}
+
+.botao-habilitar,
+.botao-habilitar.btn {
+    flex: 0 0 auto;
+    padding: 0 16px;
+    border-color: #6c757d;
+    background: #212529;
+    color: #f8f9fa;
+}
+
+.botao-habilitar:hover,
+.botao-habilitar.btn:hover {
+    border-color: #adb5bd;
+    background: #343a40;
+    color: #fff;
+}
+
+.botao-enviar,
+.botao-enviar.btn {
+    padding: 13px 18px;
+    border-color: #6c757d;
+    background: #343a40;
+    color: #fff;
+}
+
+.botao-enviar:hover,
+.botao-enviar.btn:hover {
+    border-color: #adb5bd;
+    background: #495057;
+    color: #fff;
+}
+
+.mensagem {
+    min-height: 1.2em;
+    margin: 0;
+    color: #75b798;
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        padding: 20px;
+    }
+
+    .linha-campo {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .botao-habilitar {
+        padding: 11px;
+    }
+}
+
