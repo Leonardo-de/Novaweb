@@ -1,3 +1,11 @@
+﻿<!--
+Descricao: Atividade 13 - Elementos Avançados de Formulário
+nome_arquivo: perfil.html
+nome_exercicio: Atividade 13 - Elementos Avançados de Formulário
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,54 +20,123 @@
         <h1>Bem-vindo ao Perfil</h1>
     </header>
     <main>
-        <form class="form">
-            <div class="alert alert-info" role="alert" id="mensagem" style="display: none;">
-                
-            </div>
+        <form class="form" id="formPerfil">
+            <div class="alert" role="alert" id="mensagem" style="display: none;"></div>
+
             <div>
-                <img src="Enéas.jpg" alt="Foto de Perfil" width="150" 
-                onmouseover="console.log('Mouse sobre a imagem')">
+                <img src="Enéas.jpg" alt="Foto de Perfil" width="150"
+                    onmouseover="console.log('Mouse sobre a imagem')">
             </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
                 <label for="nome" class="form-label">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome" 
-                    value="Seu Nome" >
+                <input type="text" class="form-control" id="nome" name="nome"
+                    value="Seu Nome" required minlength="3">
             </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
                 <label for="nascimento" class="form-label">Nascimento:</label>
-                <input type="date" class="form-control" id="nascimento" 
-                    name="nascimento" max="2024-12-31" min="1900-01-01">
+                <input type="date" class="form-control" id="nascimento"
+                    name="nascimento" max="2024-12-31" min="1900-01-01" required>
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" class="form-control" id="cpf" name="cpf" 
-                    value="Seu CPF" onblur="validaCPF()">
+                <input type="text" class="form-control" id="cpf" name="cpf"
+                    placeholder="000.000.000-00" maxlength="14" required>
+                <div class="invalid-feedback" id="erroCpf">Digite um CPF com 11 números.</div>
+            </div>
+
+            <fieldset class="mb-3">
+                <legend class="fs-6">Gênero:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoFeminino" value="feminino" required>
+                    <label class="form-check-label" for="generoFeminino">Feminino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoMasculino" value="masculino">
+                    <label class="form-check-label" for="generoMasculino">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoOutro" value="outro">
+                    <label class="form-check-label" for="generoOutro">Prefiro não informar</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group mb-3">
+                <label for="interesse" class="form-label">Área de interesse:</label>
+                <select class="form-select" id="interesse" name="interesse" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="design">Design</option>
+                    <option value="negocios">Negócios</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <fieldset class="mb-3">
+                <legend class="fs-6">Preferências:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="receberNovidades" name="preferencias" value="novidades">
+                    <label class="form-check-label" for="receberNovidades">Quero receber novidades por e-mail</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="receberEventos" name="preferencias" value="eventos">
+                    <label class="form-check-label" for="receberEventos">Quero receber informações sobre eventos</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group mb-3">
+                <label for="sobre" class="form-label">Sobre mim:</label>
+                <textarea class="form-control" id="sobre" name="sobre" rows="4"
+                    maxlength="300" placeholder="Conte um pouco sobre você"></textarea>
+                <div class="form-text"><span id="contador">0</span>/300 caracteres</div>
             </div>
 
             <div class="form-group">
-                <button type="button" onclick="mensagem()"
-                class="btn btn-primary">Salvar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </div>
         </form>
     </main>
+
     <script type="text/javascript">
-        function mensagem(){
-            const msg = document.querySelector('#mensagem');
-            msg.style.display = 'block';
-            msg.textContent = 'Perfil salvo com sucesso!';
+        const form = document.querySelector('#formPerfil');
+        const campoCpf = document.querySelector('#cpf');
+        const mensagem = document.querySelector('#mensagem');
+        const sobre = document.querySelector('#sobre');
+        const contador = document.querySelector('#contador');
+
+        function validaCPF() {
+            const numeros = campoCpf.value.replace(/\D/g, '');
+            const valido = numeros.length === 11;
+            campoCpf.setCustomValidity(valido ? '' : 'Digite um CPF com 11 números.');
+            campoCpf.classList.toggle('is-invalid', !valido && campoCpf.value.length > 0);
+            return valido;
         }
 
-        function validaCPF(){
-            const cpf = document.querySelector('#cpf').value;
-            // Implement CPF validation logic here
-            console.log(cpf);
-            if (cpf.length !== 11) {
-                const msg = document.querySelector('#mensagem');
-                msg.style.display = 'block';
-                msg.textContent = 'CPF inválido. Deve conter 11 dígitos.';
+        campoCpf.addEventListener('input', validaCPF);
+
+        sobre.addEventListener('input', function () {
+            contador.textContent = sobre.value.length;
+        });
+
+        form.addEventListener('submit', function (evento) {
+            evento.preventDefault();
+            validaCPF();
+
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                mensagem.className = 'alert alert-danger';
+                mensagem.textContent = 'Verifique os campos obrigatórios e corrija o CPF.';
+                mensagem.style.display = 'block';
+                form.querySelector(':invalid').focus();
+                return;
             }
-        }
+
+            mensagem.className = 'alert alert-success';
+            mensagem.textContent = 'Perfil salvo com sucesso!';
+            mensagem.style.display = 'block';
+        });
     </script>
 </body>
 </html>
