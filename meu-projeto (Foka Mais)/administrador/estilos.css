@@ -1,0 +1,17 @@
+﻿/*
+Descricao: Aula 16 - Integração de Componentes de Interface
+nome_arquivo: estilos.css
+nome_exercicio: Aula 16 - Integração de Componentes de Interface
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+*/
+
+body { min-height: 100vh; background: #f4f7f5; color: #202823; }
+header h1 { font-weight: 700; }
+.eyebrow { margin-bottom: .4rem; color: #277456; font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.card { border: 1px solid #e1e8e3; border-radius: .8rem; }
+#tabela-produtos tbody tr { cursor: pointer; }
+#tabela-produtos tbody tr:focus { outline: 3px solid #6fceae; outline-offset: -3px; }
+#tabela-produtos tbody tr.selecionado > * { background: #e1f4ec; }
+.mensagem { min-height: 1.5em; color: #23734f; font-weight: 600; }

@@ -1,0 +1,76 @@
+﻿<!--
+Descricao: Aula 16 - Integração de Componentes de Interface
+nome_arquivo: index.html
+nome_exercicio: Aula 16 - Integração de Componentes de Interface
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador | Foka Mais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container py-5">
+        <header class="mb-4">
+            <p class="eyebrow">Foka Mais · Painel administrativo</p>
+            <h1>Gerenciar produtos</h1>
+            <p class="text-secondary">Selecione um produto na tabela para carregar seus dados no formulário.</p>
+        </header>
+
+        <section class="card shadow-sm mb-4" aria-labelledby="titulo-tabela">
+            <div class="card-body">
+                <h2 class="h4" id="titulo-tabela">Produtos cadastrados</h2>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle" id="tabela-produtos">
+                        <thead><tr><th scope="col">Produto</th><th scope="col">Categoria</th><th scope="col">Preço</th><th scope="col">Estoque</th></tr></thead>
+                        <tbody>
+                            <tr tabindex="0" data-id="1"><td class="produto">Notebook Gamer</td><td class="categoria">Notebooks</td><td class="preco">R$ 4.599,90</td><td class="estoque">8</td></tr>
+                            <tr tabindex="0" data-id="2"><td class="produto">Mouse sem fio</td><td class="categoria">Periféricos</td><td class="preco">R$ 129,90</td><td class="estoque">24</td></tr>
+                            <tr tabindex="0" data-id="3"><td class="produto">Headset USB</td><td class="categoria">Periféricos</td><td class="preco">R$ 249,90</td><td class="estoque">12</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="card shadow-sm" aria-labelledby="titulo-formulario">
+            <div class="card-body">
+                <h2 class="h4" id="titulo-formulario">Editar produto</h2>
+                <p id="orientacao">Escolha uma linha da tabela para carregar os dados.</p>
+                <form id="form-produto">
+                    <input id="produto-id" name="id" type="hidden">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="nome">Nome do produto</label>
+                            <input class="form-control" id="nome" name="nome" type="text" required minlength="2" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="categoria">Categoria</label>
+                            <input class="form-control" id="categoria" name="categoria" type="text" required disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="preco">Preço (R$)</label>
+                            <input class="form-control" id="preco" name="preco" type="number" min="0.01" step="0.01" required disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="estoque">Quantidade em estoque</label>
+                            <input class="form-control" id="estoque" name="estoque" type="number" min="0" step="1" required disabled>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-4" id="salvar" type="submit" disabled>Salvar alterações</button>
+                    <p class="mensagem mt-3 mb-0" id="mensagem" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
