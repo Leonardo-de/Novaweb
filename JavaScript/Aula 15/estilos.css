@@ -1,0 +1,65 @@
+﻿/*
+Descricao: Aula 15 - JavaScript aplicado a Formulários
+nome_arquivo: estilos.css
+nome_exercicio: Aula 15 - JavaScript aplicado a Formulários
+nome_aluno: Leonardo de Oliveira Rodrigues
+email_aluno: leonardo.rodrigues4@portalsesisp.org.br
+turma: TDE-1BAA-26
+*/
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 32px 16px;
+    background: #080a0b;
+    color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container { width: min(100%, 680px); margin: 0 auto; }
+.cabecalho { margin-bottom: 24px; text-align: center; }
+.cabecalho h1 { margin: 8px 0; }
+.cabecalho p { line-height: 1.5; }
+.aula { color: #8ab4f8; font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+.formulario {
+    display: grid;
+    gap: 20px;
+    padding: 28px;
+    border: 1px solid #343a40;
+    border-radius: 8px;
+    background: #080a0b;
+}
+
+.campo label { display: block; margin-bottom: 8px; font-weight: 700; }
+.campo input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    background: #111416;
+    color: #f8f9fa;
+    font: inherit;
+}
+.campo input::placeholder { color: #8b949e; }
+.campo input:focus { border-color: #8ab4f8; outline: 3px solid rgb(138 180 248 / 20%); }
+.campo input:required:valid:not(:placeholder-shown) { border-color: #198754; }
+.campo input:required:invalid:not(:placeholder-shown) { border-color: #dc3545; }
+
+.botao-enviar {
+    padding: 13px 18px;
+    border: 1px solid #6c757d;
+    border-radius: 6px;
+    background: #343a40;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.botao-enviar:hover { background: #495057; }
+.botao-enviar:focus-visible { outline: 3px solid #8ab4f8; outline-offset: 2px; }
+.mensagem { min-height: 1.2em; margin: 0; color: #75b798; font-weight: 700; }
+
+@media (max-width: 480px) { .formulario { padding: 20px; } }
