@@ -73,3 +73,4 @@ As interfaces serão adaptadas para computadores e dispositivos móveis. As imag
 SA02-FokaMais/
 ├── README.md
 └── images/
+       └── logo.png
