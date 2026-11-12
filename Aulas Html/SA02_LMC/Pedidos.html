@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos | Foka Mais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="orders-page">
+  <aside class="sidebar">
+    <div class="sidebar-header"><a class="brand-link" href="vendas.html"><img class="brand-logo" src="logo.png" alt="Foka Mais"></a></div>
+    <div class="store-selector"><div class="store-info"><div class="store-icon">⌂</div><div><div class="store-name">Foka Mais</div><div class="store-sub">Loja online</div></div></div><span>⌄</span></div>
+    <nav class="nav-section"><div class="nav-label">Principal</div><a href="vendas.html" class="nav-item"><span>▦</span> Visão geral</a><a href="Pedidos.html" class="nav-item active"><span>▱</span> Pedidos <span class="nav-count">12</span></a><a href="#" class="nav-item"><span>⬡</span> Produtos</a><a href="#" class="nav-item"><span>♙</span> Clientes</a><a href="#" class="nav-item"><span>▤</span> Estoque</a><a href="#" class="nav-item"><span>▥</span> Relatórios</a></nav>
+    <nav class="nav-section"><div class="nav-label">Gestão</div><a href="#" class="nav-item"><span>⚑</span> Campanhas</a><a href="#" class="nav-item"><span>$</span> Financeiro</a><a href="#" class="nav-item"><span>⚙</span> Configurações</a></nav>
+    <div class="sidebar-footer"><div class="online-note"><span></span><strong>Sua loja está online</strong><small>Estoque e pedidos sincronizados há 2 minutos.</small></div><div class="user-card"><div class="avatar">LO</div><div class="user-info"><div class="user-name">Leonardo Oliveira</div><div class="user-role">Administrador</div></div></div></div>
+  </aside>
+  <main class="main-content">
+    <header class="topbar"><div class="breadcrumb">Comercial <span>›</span> <strong>Pedidos</strong></div><div class="topbar-actions"><div class="search-bar"><input type="search" placeholder="Buscar pedidos, produtos..."></div><button class="icon-btn" aria-label="Notificações">♧</button><div class="orders-user"><div class="avatar">LO</div><span>Leonardo Oliveira<br><small>Administrador</small></span></div></div></header>
+    <section class="orders-content">
+      <div class="orders-page-heading"><div><h1>Consulta de pedidos</h1><p>Encontre pedidos e acompanhe cada etapa da sua operação comercial.</p></div><div class="heading-actions"><button class="secondary-btn">⇩ Exportar</button><button class="primary-btn">＋ Novo pedido</button></div></div>
+      <div class="orders-kpis"><article class="orders-kpi orders-kpi-highlight"><div>Pedidos no período <span>▣</span></div><strong>312</strong><small>01 a 30 de setembro</small></article><article class="orders-kpi"><div>Aguardando pagamento <span>◷</span></div><strong>12</strong><small>Pedidos pendentes de confirmação</small></article><article class="orders-kpi"><div>Em preparação <span>⬡</span></div><strong>28</strong><small>Separação e embalagem</small></article><article class="orders-kpi"><div>Enviados <span>⇢</span></div><strong>246</strong><small>Pedidos a caminho ou entregues</small></article></div>
+      <section class="orders-table-card">
+        <div class="table-card-heading"><div><h2>Todos os pedidos <span class="subtle-count">312</span></h2></div><button class="column-button">▥ Colunas⌄</button></div>
+        <div class="orders-filters"><input type="search" placeholder="⌕  Buscar por nº do pedido, cliente ou produto"><select aria-label="Período"><option>01 – 30 set, 2026</option><option>Últimos 7 dias</option><option>Últimos 30 dias</option></select><select aria-label="Canal"><option>Todos os canais</option><option>Loja online</option><option>Marketplace</option></select><button class="secondary-btn">☷ Mais filtros</button></div>
+        <div class="order-tabs"><button class="filter-btn active">Todos <small>312</small></button><button class="filter-btn">Pagos <small>28</small></button><button class="filter-btn">Pendentes <small>12</small></button><button class="filter-btn">Enviados <small>246</small></button><button class="filter-btn">Cancelados <small>26</small></button></div>
+        <div class="table-scroll"><table class="orders-table"><thead><tr><th><input type="checkbox" aria-label="Selecionar todos"></th><th>Pedido ↕</th><th>Cliente</th><th>Produto</th><th>Total / pagamento</th><th>Status</th><th></th></tr></thead><tbody>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1842"></td><td><strong>#FM-1842</strong><small>30 set, 16:42</small></td><td>Mariana Santos<small>São Paulo, SP</small></td><td>Samsung Galaxy A55<small>128 GB · 1 unidade</small></td><td><strong>R$ 1.699,00</strong><small>Pix</small></td><td><span class="status-pill status-paid">● Pago</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1841"></td><td><strong>#FM-1841</strong><small>30 set, 16:18</small></td><td>Rafael Oliveira<small>Curitiba, PR</small></td><td>SSD Kingston NV2<small>1 TB · 2 unidades</small></td><td><strong>R$ 758,00</strong><small>Cartão de crédito</small></td><td><span class="status-pill status-shipped">● Enviado</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1840"></td><td><strong>#FM-1840</strong><small>30 set, 15:56</small></td><td>Camila Ferreira<small>Belo Horizonte, MG</small></td><td>Controle DualSense PS5<small>Branco · 1 unidade</small></td><td><strong>R$ 499,00</strong><small>Boleto</small></td><td><span class="status-pill status-pending">● Pendente</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1839"></td><td><strong>#FM-1839</strong><small>30 set, 15:30</small></td><td>Pedro Costa<small>Recife, PE</small></td><td>Headset HyperX Stinger II<small>Preto · 1 unidade</small></td><td><strong>R$ 299,00</strong><small>Pix</small></td><td><span class="status-pill status-paid">● Pago</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1838"></td><td><strong>#FM-1838</strong><small>30 set, 14:47</small></td><td>Juliana Lima<small>Porto Alegre, RS</small></td><td>Mouse Logitech G203<small>Preto · 1 unidade</small></td><td><strong>R$ 149,00</strong><small>Cartão de crédito</small></td><td><span class="status-pill status-cancelled">● Cancelado</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1837"></td><td><strong>#FM-1837</strong><small>30 set, 14:12</small></td><td>Bruno Martins<small>Campinas, SP</small></td><td>Monitor LG UltraGear<small>24 polegadas · 1 unidade</small></td><td><strong>R$ 1.099,00</strong><small>Cartão de crédito</small></td><td><span class="status-pill status-shipped">● Enviado</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1836"></td><td><strong>#FM-1836</strong><small>30 set, 13:58</small></td><td>Fernanda Alves<small>Salvador, BA</small></td><td>Teclado Redragon Kumara<small>Switch vermelho · 1 unidade</small></td><td><strong>R$ 239,00</strong><small>Pix</small></td><td><span class="status-pill status-paid">● Pago</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+          <tr><td><input type="checkbox" aria-label="Selecionar pedido FM-1835"></td><td><strong>#FM-1835</strong><small>30 set, 13:24</small></td><td>Diego Martins<small>Brasília, DF</small></td><td>JBL Tune 520BT<small>Azul · 1 unidade</small></td><td><strong>R$ 249,00</strong><small>Boleto</small></td><td><span class="status-pill status-pending">● Pendente</span></td><td><button class="dots-btn" aria-label="Mais opções">•••</button></td></tr>
+        </tbody></table></div>
+        <div class="table-pagination"><span>Mostrando 1–8 de 312 pedidos</span><div>Por página <select aria-label="Pedidos por página"><option>8</option><option>16</option><option>32</option></select><button>‹</button><button class="page-current">1</button><button>2</button><button>3</button><span>…</span><button>39</button><button>›</button></div></div>
+      </section>
+      <footer class="orders-footnote"><span>Dados demonstrativos · Clientes e pedidos fictícios · Valores em reais (BRL)</span><span>Última atualização: 30 set, 2026 às 16:45</span></footer>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
